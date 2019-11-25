@@ -74,3 +74,15 @@ extension QMUIHelper {
     }
 
 }
+
+
+//MARK:- Keyboard
+extension QMUIHelper {
+
+    func handleKeyboardWillShow(notification: Notification) {
+        
+    }
+
+}
+
+
