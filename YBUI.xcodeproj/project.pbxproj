@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C6BE4BE238E85EE0069D1C7 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BE4BD238E85EE0069D1C7 /* Regex.swift */; };
+		6C6BE4C0238E8F180069D1C7 /* RegexTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6BE4BF238E8F180069D1C7 /* RegexTools.swift */; };
+		6C6DD814238E45AE00A9340D /* String+YBUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6DD813238E45AE00A9340D /* String+YBUI.swift */; };
+		6CCD9C0D238E715B0032E12D /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD9C0C238E715B0032E12D /* Data+Crypto.swift */; };
+		6CCD9C11238E728A0032E12D /* CharacterSet+YBUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD9C10238E728A0032E12D /* CharacterSet+YBUI.swift */; };
 		6CD6CE28238BA86600BDDCBC /* QMUILab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD6CE27238BA86600BDDCBC /* QMUILab.swift */; };
 		6CF7B65C2387B87C005CA8BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF7B65B2387B87C005CA8BE /* AppDelegate.swift */; };
 		6CF7B65E2387B87C005CA8BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF7B65D2387B87C005CA8BE /* SceneDelegate.swift */; };
@@ -21,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C6BE4BD238E85EE0069D1C7 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		6C6BE4BF238E8F180069D1C7 /* RegexTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexTools.swift; sourceTree = "<group>"; };
+		6C6DD813238E45AE00A9340D /* String+YBUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+YBUI.swift"; sourceTree = "<group>"; };
+		6CCD9C0C238E715B0032E12D /* Data+Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Crypto.swift"; sourceTree = "<group>"; };
+		6CCD9C10238E728A0032E12D /* CharacterSet+YBUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+YBUI.swift"; sourceTree = "<group>"; };
 		6CD6CE27238BA86600BDDCBC /* QMUILab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QMUILab.swift; sourceTree = "<group>"; };
 		6CF7B6582387B87C005CA8BE /* YBUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CF7B65B2387B87C005CA8BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,9 +57,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C6BE4BC238E85D40069D1C7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6C6BE4BD238E85EE0069D1C7 /* Regex.swift */,
+				6C6BE4BF238E8F180069D1C7 /* RegexTools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		6CCD9C0E238E72560032E12D /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				6C6DD813238E45AE00A9340D /* String+YBUI.swift */,
+				6CCD9C0C238E715B0032E12D /* Data+Crypto.swift */,
+				6CCD9C10238E728A0032E12D /* CharacterSet+YBUI.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		6CF7B64F2387B87C005CA8BE = {
 			isa = PBXGroup;
 			children = (
+				6C6BE4BC238E85D40069D1C7 /* Tools */,
 				6CF7B6762387CBE7005CA8BE /* QMUICore */,
 				6CF7B66F2387B98B005CA8BE /* Extensions */,
 				6CF7B65A2387B87C005CA8BE /* YBUI */,
@@ -82,6 +112,7 @@
 		6CF7B66F2387B98B005CA8BE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6CCD9C0E238E72560032E12D /* Foundation */,
 				6CF7B6722387C4DE005CA8BE /* UIKit */,
 				6CF7B6702387BEA8005CA8BE /* CALayer+YBUI.swift */,
 			);
@@ -179,11 +210,16 @@
 			files = (
 				6CF7B6602387B87C005CA8BE /* ViewController.swift in Sources */,
 				6CF7B65C2387B87C005CA8BE /* AppDelegate.swift in Sources */,
+				6C6BE4C0238E8F180069D1C7 /* RegexTools.swift in Sources */,
+				6C6DD814238E45AE00A9340D /* String+YBUI.swift in Sources */,
 				6CF7B6712387BEA8005CA8BE /* CALayer+YBUI.swift in Sources */,
 				6CD6CE28238BA86600BDDCBC /* QMUILab.swift in Sources */,
+				6C6BE4BE238E85EE0069D1C7 /* Regex.swift in Sources */,
 				6CF7B6742387C4F7005CA8BE /* UItextField+YBUI.swift in Sources */,
+				6CCD9C11238E728A0032E12D /* CharacterSet+YBUI.swift in Sources */,
 				6CF7B65E2387B87C005CA8BE /* SceneDelegate.swift in Sources */,
 				6CF7B67A2387D53D005CA8BE /* QMUIHelper.swift in Sources */,
+				6CCD9C0D238E715B0032E12D /* Data+Crypto.swift in Sources */,
 				6CF7B6782387CC17005CA8BE /* QMUIConst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
