@@ -52,9 +52,10 @@ public struct Regex {
         let rangedMatches = Array(matches[0..<min(matches.count, count ?? .max)])
         for match in rangedMatches.reversed() {
             let replacement = match.string(applyingTemplate: template)
-            output.replaceSubrange(match.range, with: replacement)
+            if let range = match.range {
+                output.replaceSubrange(range, with: replacement)
+            }
         }
-
         return output
     }
 }
@@ -105,12 +106,15 @@ extension Regex {
     public class Match: CustomStringConvertible {
         //匹配的字符串
         public lazy var string: String = {
-            return String(describing: self.baseString[self.range])
+            guard let range = range else {
+                return String(describing: "")
+            }
+            return String(describing: self.baseString[range])
         }()
 
         //匹配的字符范围
-        public lazy var range: Range<String.Index> = {
-            return Range(self.result.range, in: self.baseString)!
+        public lazy var range: Range<String.Index>? = {
+            return Range(self.result.range, in: self.baseString)
         }()
 
         //正则表达式中每个捕获组匹配的字符串

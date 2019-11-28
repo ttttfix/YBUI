@@ -13,6 +13,9 @@
 		6CCD9C0D238E715B0032E12D /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD9C0C238E715B0032E12D /* Data+Crypto.swift */; };
 		6CCD9C11238E728A0032E12D /* CharacterSet+YBUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCD9C10238E728A0032E12D /* CharacterSet+YBUI.swift */; };
 		6CD6CE28238BA86600BDDCBC /* QMUILab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD6CE27238BA86600BDDCBC /* QMUILab.swift */; };
+		6CF67B4F238FB93B006280E9 /* UITextView+YBUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF67B4E238FB93B006280E9 /* UITextView+YBUI.swift */; };
+		6CF67B51238FD79D006280E9 /* URL+YBUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF67B50238FD79D006280E9 /* URL+YBUI.swift */; };
+		6CF67B53238FDBA5006280E9 /* UIColor+YBUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF67B52238FDBA5006280E9 /* UIColor+YBUI.swift */; };
 		6CF7B65C2387B87C005CA8BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF7B65B2387B87C005CA8BE /* AppDelegate.swift */; };
 		6CF7B65E2387B87C005CA8BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF7B65D2387B87C005CA8BE /* SceneDelegate.swift */; };
 		6CF7B6602387B87C005CA8BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF7B65F2387B87C005CA8BE /* ViewController.swift */; };
@@ -23,7 +26,19 @@
 		6CF7B6742387C4F7005CA8BE /* UItextField+YBUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF7B6732387C4F7005CA8BE /* UItextField+YBUI.swift */; };
 		6CF7B6782387CC17005CA8BE /* QMUIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF7B6772387CC17005CA8BE /* QMUIConst.swift */; };
 		6CF7B67A2387D53D005CA8BE /* QMUIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF7B6792387D53D005CA8BE /* QMUIHelper.swift */; };
+		6CFB2C23238F59C700C350BC /* YBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB2C22238F59C700C350BC /* YBUITests.swift */; };
+		6CFB2C2C238F76DE00C350BC /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB2C2B238F76DE00C350BC /* StringExtensionTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CFB2C25238F59C700C350BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CF7B6502387B87C005CA8BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CF7B6572387B87C005CA8BE;
+			remoteInfo = YBUI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6C6BE4BD238E85EE0069D1C7 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
@@ -32,6 +47,9 @@
 		6CCD9C0C238E715B0032E12D /* Data+Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Crypto.swift"; sourceTree = "<group>"; };
 		6CCD9C10238E728A0032E12D /* CharacterSet+YBUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharacterSet+YBUI.swift"; sourceTree = "<group>"; };
 		6CD6CE27238BA86600BDDCBC /* QMUILab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QMUILab.swift; sourceTree = "<group>"; };
+		6CF67B4E238FB93B006280E9 /* UITextView+YBUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+YBUI.swift"; sourceTree = "<group>"; };
+		6CF67B50238FD79D006280E9 /* URL+YBUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+YBUI.swift"; sourceTree = "<group>"; };
+		6CF67B52238FDBA5006280E9 /* UIColor+YBUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+YBUI.swift"; sourceTree = "<group>"; };
 		6CF7B6582387B87C005CA8BE /* YBUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CF7B65B2387B87C005CA8BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CF7B65D2387B87C005CA8BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,10 +62,22 @@
 		6CF7B6732387C4F7005CA8BE /* UItextField+YBUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UItextField+YBUI.swift"; sourceTree = "<group>"; };
 		6CF7B6772387CC17005CA8BE /* QMUIConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QMUIConst.swift; sourceTree = "<group>"; };
 		6CF7B6792387D53D005CA8BE /* QMUIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QMUIHelper.swift; sourceTree = "<group>"; };
+		6CFB2C20238F59C700C350BC /* YBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CFB2C22238F59C700C350BC /* YBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YBUITests.swift; sourceTree = "<group>"; };
+		6CFB2C24238F59C700C350BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CFB2C2A238F767D00C350BC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6CFB2C2B238F76DE00C350BC /* StringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6CF7B6552387B87C005CA8BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFB2C1D238F59C700C350BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,6 +102,7 @@
 				6C6DD813238E45AE00A9340D /* String+YBUI.swift */,
 				6CCD9C0C238E715B0032E12D /* Data+Crypto.swift */,
 				6CCD9C10238E728A0032E12D /* CharacterSet+YBUI.swift */,
+				6CF67B50238FD79D006280E9 /* URL+YBUI.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -79,10 +110,12 @@
 		6CF7B64F2387B87C005CA8BE = {
 			isa = PBXGroup;
 			children = (
+				6CFB2C2A238F767D00C350BC /* README.md */,
 				6C6BE4BC238E85D40069D1C7 /* Tools */,
 				6CF7B6762387CBE7005CA8BE /* QMUICore */,
 				6CF7B66F2387B98B005CA8BE /* Extensions */,
 				6CF7B65A2387B87C005CA8BE /* YBUI */,
+				6CFB2C21238F59C700C350BC /* YBUITests */,
 				6CF7B6592387B87C005CA8BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				6CF7B6582387B87C005CA8BE /* YBUI.app */,
+				6CFB2C20238F59C700C350BC /* YBUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				6CF7B6732387C4F7005CA8BE /* UItextField+YBUI.swift */,
+				6CF67B4E238FB93B006280E9 /* UITextView+YBUI.swift */,
+				6CF67B52238FDBA5006280E9 /* UIColor+YBUI.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -135,6 +171,16 @@
 				6CD6CE27238BA86600BDDCBC /* QMUILab.swift */,
 			);
 			path = QMUICore;
+			sourceTree = "<group>";
+		};
+		6CFB2C21238F59C700C350BC /* YBUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6CFB2C22238F59C700C350BC /* YBUITests.swift */,
+				6CFB2C24238F59C700C350BC /* Info.plist */,
+				6CFB2C2B238F76DE00C350BC /* StringExtensionTests.swift */,
+			);
+			path = YBUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +203,24 @@
 			productReference = 6CF7B6582387B87C005CA8BE /* YBUI.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6CFB2C1F238F59C700C350BC /* YBUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CFB2C29238F59C700C350BC /* Build configuration list for PBXNativeTarget "YBUITests" */;
+			buildPhases = (
+				6CFB2C1C238F59C700C350BC /* Sources */,
+				6CFB2C1D238F59C700C350BC /* Frameworks */,
+				6CFB2C1E238F59C700C350BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CFB2C26238F59C700C350BC /* PBXTargetDependency */,
+			);
+			name = YBUITests;
+			productName = YBUITests;
+			productReference = 6CFB2C20238F59C700C350BC /* YBUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,6 +233,10 @@
 				TargetAttributes = {
 					6CF7B6572387B87C005CA8BE = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					6CFB2C1F238F59C700C350BC = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 6CF7B6572387B87C005CA8BE;
 					};
 				};
 			};
@@ -186,6 +254,7 @@
 			projectRoot = "";
 			targets = (
 				6CF7B6572387B87C005CA8BE /* YBUI */,
+				6CFB2C1F238F59C700C350BC /* YBUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +270,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6CFB2C1E238F59C700C350BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -208,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CF67B4F238FB93B006280E9 /* UITextView+YBUI.swift in Sources */,
+				6CF67B51238FD79D006280E9 /* URL+YBUI.swift in Sources */,
 				6CF7B6602387B87C005CA8BE /* ViewController.swift in Sources */,
 				6CF7B65C2387B87C005CA8BE /* AppDelegate.swift in Sources */,
 				6C6BE4C0238E8F180069D1C7 /* RegexTools.swift in Sources */,
@@ -220,11 +298,29 @@
 				6CF7B65E2387B87C005CA8BE /* SceneDelegate.swift in Sources */,
 				6CF7B67A2387D53D005CA8BE /* QMUIHelper.swift in Sources */,
 				6CCD9C0D238E715B0032E12D /* Data+Crypto.swift in Sources */,
+				6CF67B53238FDBA5006280E9 /* UIColor+YBUI.swift in Sources */,
 				6CF7B6782387CC17005CA8BE /* QMUIConst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6CFB2C1C238F59C700C350BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFB2C2C238F76DE00C350BC /* StringExtensionTests.swift in Sources */,
+				6CFB2C23238F59C700C350BC /* YBUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CFB2C26238F59C700C350BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CF7B6572387B87C005CA8BE /* YBUI */;
+			targetProxy = 6CFB2C25238F59C700C350BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6CF7B6612387B87C005CA8BE /* Main.storyboard */ = {
@@ -394,6 +490,44 @@
 			};
 			name = Release;
 		};
+		6CFB2C27238F59C700C350BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttttfix.YBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YBUI.app/YBUI";
+			};
+			name = Debug;
+		};
+		6CFB2C28238F59C700C350BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ttttfix.YBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YBUI.app/YBUI";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +545,15 @@
 			buildConfigurations = (
 				6CF7B66D2387B87E005CA8BE /* Debug */,
 				6CF7B66E2387B87E005CA8BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CFB2C29238F59C700C350BC /* Build configuration list for PBXNativeTarget "YBUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CFB2C27238F59C700C350BC /* Debug */,
+				6CFB2C28238F59C700C350BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

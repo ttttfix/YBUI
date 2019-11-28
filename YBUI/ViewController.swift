@@ -15,7 +15,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         let string = "123456"
         print(string.md5)
-
     }
 }
 

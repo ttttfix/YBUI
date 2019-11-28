@@ -24,7 +24,7 @@ public extension String {
 
     /// 将文字中的换行符替换为空格
     var trimLinerBreakCharacter: String {
-        return replacingOccurrences(of: "\r\n", with: "", options: .regularExpression, range: range(of: self))
+        return replacingOccurrences(of: "\n", with: " ", options: .regularExpression, range: range(of: self))
     }
 
     /// 把该字符串转换为对应的 md5
@@ -52,7 +52,7 @@ public extension String {
     var capitalizedString: String? {
         guard self.count > 0, let first = subString(to: 0), let other = subString(from: 1) else {return nil}
 
-        return first + other
+        return first.uppercased() + other
     }
 
 
@@ -88,7 +88,6 @@ public extension String {
         }
         return number
     }
-
 }
 
 
