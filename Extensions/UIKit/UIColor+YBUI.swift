@@ -35,7 +35,7 @@ extension UIColor {
     *  @return 色值对应的 hex 字符串，以 # 开头，例如 #00ff00ff
     */
     func hexString() -> String {
-        return ""
+        return String("#\(rgb())")
     }
     /**
     *  获取当前 UIColor 对象里的红色色值
@@ -46,7 +46,7 @@ extension UIColor {
         guard let rgbInt = rgb() else {
             return CGFloat(0)
         }
-        return CGFloat(rgbInt >> 24)
+        return CGFloat((rgbInt >> 16) << 8)/255.0
     }
 
     /**
@@ -58,7 +58,7 @@ extension UIColor {
         guard let rgbInt = rgb() else {
             return CGFloat(0)
         }
-        return CGFloat((rgbInt >> 16) << 8)
+        return CGFloat((rgbInt >> 8) << 16)/255.0
     }
     /**
     *  获取当前 UIColor 对象里的蓝色色值
@@ -69,7 +69,7 @@ extension UIColor {
         guard let rgbInt = rgb() else {
             return CGFloat(0)
         }
-        return CGFloat((rgbInt >> 16) << 8)
+        return CGFloat(rgbInt << 24)/255.0
     }
 
     /**
@@ -78,8 +78,52 @@ extension UIColor {
     *  @return 透明通道的色值，值范围为0.0-1.0
     */
     func alphaValue() -> CGFloat {
-
+        guard let rgbInt = rgb() else {
+            return CGFloat(0)
+        }
+        return CGFloat(rgbInt >> 24)/255.0
     }
+
+    /**
+    *  将当前UIColor对象剥离掉alpha通道后得到的色值。相当于把当前颜色的半透明值强制设为1.0后返回
+    *
+    *  @return alpha通道为1.0，其他rgb通道与原UIColor对象一致的新UIColor对象
+    */
+    func colorWithoutAlpha() -> UIColor {
+        var red : CGFloat = 0
+        var green : CGFloat = 0
+        var blue : CGFloat = 0
+        var alpha: CGFloat = 1
+        if self.getRed(&red, green: &green, blue: &blue, alpha: &alpha) {
+             return UIColor(red: red, green:green, blue: blue, alpha: CGFloat(1))
+        } else {
+            // Could not extract RGBA components:
+            return .white
+        }
+    }
+
+    /**
+     *  判断当前颜色是否为深色，可用于根据不同色调动态设置不同文字颜色的场景。
+     *
+     *  @link http://stackoverflow.com/questions/19456288/text-color-based-on-background-image @/link
+     *
+     *  @return 若为深色则返回“YES”，浅色则返回“NO”
+     */
+    func isDark() -> Bool {
+        var red : CGFloat = 0
+        var green : CGFloat = 0
+        var blue : CGFloat = 0
+        var alpha: CGFloat = 0
+        if self.getRed(&red, green: &green, blue: &blue, alpha: &alpha) {
+            let referenceValue:CGFloat = 0.411
+            let colorDelta = (red * 0.299) + (green * 0.587) + (blue * 0.114)
+            return 1.0 - colorDelta > referenceValue
+        } else {
+            // Could not extract RGBA components:
+            return false
+        }
+    }
+
 
 
 }
